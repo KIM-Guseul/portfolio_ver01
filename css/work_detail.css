@@ -1,0 +1,76 @@
+@import url('common.css');
+
+h1 {color: #1b1b2f;}
+
+main .contents {display: flex;}
+
+main .con_viewer {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.v_com{}
+.v_com img {
+    width: 37vw;
+    position: absolute;
+    z-index: 1;
+    top: 5.5vw; left: 0;
+}
+.v_com .canvas{
+    position: absolute;
+    z-index: 2;
+    left: 5vw; top: 7.5vw;
+    width: 27vw; height: 17.5vw;
+    background: #fff;
+}
+
+.v_phone{}
+.v_phone img {
+    width: 18vw;
+    position: absolute;
+    z-index: 3;
+    bottom: 3vw; right: -4vw;
+}
+.v_phone .canvas{
+    position: absolute;
+    z-index: 4;
+    right: -1.9vw; bottom: 7.5vw;
+    width: 7.2vw; height: 12vw;
+    background: #fff;
+}
+
+main .con_detail {
+    background: #fcfdfd;
+    width: 50%;
+    height: 100%;
+    padding-left: 6vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    white-space: pre-line;
+}
+
+.con_detail .link a {
+    display: inline-block;
+    margin-top: 5vw;
+    padding: 0.4rem 0.8rem;
+    font-size: 2.5rem;
+    color: #0d548a;
+    border-top: 2px solid #0d548a;
+    border-bottom: 2px solid #0d548a;
+}
+
+.con_detail .info_01 {
+    margin-top: 2.5vw;
+    font-size: 1.5rem;
+    line-height: 2;
+}
+
+.con_detail .info_02 {
+    margin-top: 3vw;
+    font-size: 1.5rem;
+    line-height: 1.6;
+
+}

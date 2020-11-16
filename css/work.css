@@ -1,0 +1,48 @@
+@import url('common.css');
+
+main .contents{
+    position: relative;
+    border: 1px solid #000;
+    margin: auto;
+    width: 74vw; height:calc(100vh - (100vh - 36.5vw)/2);
+    transform: translateY(calc((100vh - 36.5vw)/2));
+}
+
+.work{
+    height: 100%;
+}
+.work figure{
+    position: relative;
+    height: 30%;
+
+}
+.work figure b{
+    position: absolute;
+    top: -2.5rem; left: 2.5rem;
+    font-size: 3.5rem;
+    color: rgba(150,150,150,0.8);
+}
+.work figure figcaption{
+    font-size: 1.5rem;
+}
+.work figure div{height: 100%;}
+.work figure div img{height: 100%;}
+
+
+
+.work figure figcaption span:first-child{}
+.work figure figcaption span:last-child{}
+
+.work figure:nth-child(even){
+    float: left;
+}
+.work figure:nth-child(even) span{}
+.work figure:nth-child(even) img{}
+.work figure:nth-child(even) figcaption{}
+
+.work figure:nth-child(2n){
+    float: right;
+}
+.work figure:nth-child(2n) span{}
+.work figure:nth-child(2n) img{}
+.work figure:nth-child(2n) figcaption{}

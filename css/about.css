@@ -1,0 +1,258 @@
+@import url('common.css');
+
+/*=== intsta_introduce ===*/
+main .contents{
+    display: flex;
+}
+main .insta_st{
+    position: fixed;
+    top: 0; left: 0;
+    width: 15.4vw; height: 36.5vw;
+    background: #fffdfe;
+    font-size: 1.2rem;
+    padding: 0 0.5vw;
+}
+
+.insta_st .name{
+    height: 3.9vw;
+    display: flex;
+    align-items: center;
+}
+.insta_st .name span{
+    display: inline-block;
+}
+.insta_st .name > span{
+    width: 2.1vw; height: 2.1vw;
+    background: #e1e1e1;
+    border-radius: 50%;
+}
+.insta_st .name b{
+    margin: 0 7.3vw 0 0.4vw;
+}
+.dot{
+    position: relative;
+    width: 0.25vw; height: 1vw;
+}
+.insta_st .name .dot span{
+    position: absolute;
+    top: 0; right: 0;
+    width: 0.25vw; height: 0.25vw;
+    background: #838383;
+    border-radius: 50%;
+}
+.insta_st .name .dot span:nth-of-type(1){}
+.insta_st .name .dot span:nth-of-type(2){top: 50%;}
+.insta_st .name .dot span:nth-of-type(3){top: 100%;}
+
+.insta_st .photo{
+    height: 15.4vw;
+    padding: 0;
+}
+
+.insta_st .icon{
+    position: relative;
+    height: 2vw;
+    padding-top: 0.4vw;
+}
+.insta_st .icon img{
+    margin-right: 0.5vw;
+}
+.insta_st .icon img:last-of-type{
+    position: absolute;
+    margin: 0;
+    right: 0;
+}
+
+.insta_st .txt{
+    height: 10vw;
+    white-space: pre-line;
+}
+.insta_st .tag{
+    color: #03519b;
+}
+
+/*=== page 01 ===*/
+h2{
+    font-size: 2.5rem;
+    color: #0d548a;
+    margin-bottom: 3.3vw;
+}
+.con_info{
+    position: relative;
+    width: 74vw; height: 36.5vw;
+    overflow-y:auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.con_info::-webkit-scrollbar { 
+    display: none;
+  }
+.page_01{
+    position: absolute;
+    top: 0%; right: 0;
+    width: 52.6vw; height: 36.5vw;
+    display: flex;
+}
+.page_02{
+    position: absolute;
+    top: 100%; right: 0;
+    width: 52.6vw; height: 36.5vw;
+/*    border: 1px solid #999;*/
+}
+.education{
+    width:50%;
+}
+.experience{
+    width:50%;
+    margin-left: 4vw;
+}
+table{
+    height: 30.5vw;
+    white-space: pre-line;
+    text-align: left;
+}
+table tr{}
+table tr th:nth-of-type(1){
+    font-size: 2rem;
+    padding-right: 1.5vw;
+    border-right: 2px solid #1b1b2f;
+}
+table tr th:nth-of-type(2){
+    font-size: 1.5rem;
+    line-height: 1.7;
+    padding-left: 1.5vw;
+}
+
+
+/*=== page 02 ===*/
+.skills{
+    height: 65%;
+}
+
+.skills h3{
+    font-size:2rem;
+}
+.skills > div{
+    width: 100%;
+    display: flex;
+}
+
+.sw{width: 70%;}
+.sw > div{
+    width: 80%;
+    display: flex;
+    margin-top: 2.4vw;
+    margin-left: 1vw;
+}
+
+.sw figure{
+    width: 50%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.sw figure img{
+    width: 3vw;
+}
+.sw figure figcaption{
+    position: relative;
+    width: 8rem; height: 1.3rem;
+    margin-left: 3rem;
+}
+.sw figure figcaption span{
+    position: absolute;
+    top: 0; left: 0;
+    width: 1.1rem; height: 1.1rem;
+    border: 2px solid #b22234;
+    background: #b22234;
+
+}
+.sw figure figcaption span:nth-of-type(2){left: 25%;}
+.sw figure figcaption span:nth-of-type(3){left: 50%;}
+.sw figure figcaption span:nth-of-type(4){left: 75%;}
+.sw figure figcaption span:nth-of-type(5){
+    left: 100%;
+    background: none;
+}
+.sw div:nth-of-type(2) figure figcaption span:nth-of-type(4), .sw div:nth-of-type(1) figure:nth-of-type(2) figcaption span:nth-of-type(4){
+    left: 75%;
+    background: none;
+}
+
+.lang{
+    width: 30%;
+}
+.lang img{
+    display: flex;
+    height: 3vw;
+    margin-top: 2.4vw;
+}
+
+.contact{
+    width: 100%; height: 35%;
+/*    margin-top: 6.4vw;*/
+}
+
+.contact li {
+    position: relative;
+    margin-bottom: 1vw;
+    margin-left: 4.3rem;
+    font-size: 1.5rem;
+
+}
+.contact li a{
+    display: inline-block;
+    font-size: 1.5rem;
+}
+.contact li::before{
+    content:"";
+    position: absolute;
+    display: inline-block;
+}
+.contact li:nth-of-type(1)::before{
+    width: 1.7rem; height: 2.3rem;
+    background: url('../img/ic_phone.png') no-repeat;
+    background-size: contain;
+    left: -3rem; top: 0;
+}
+.contact li:nth-of-type(2)::before{
+    width: 2rem; height: 1.5rem;
+    background: url('../img/ic_email.png') no-repeat;
+    background-size: contain;
+    left: -3.2rem; top: 0.4rem;
+}
+.contact li:nth-of-type(3)::before{
+    width: 1.9rem; height: 2.3rem;
+    background: url('../img/ic_github.png') no-repeat;
+    background-size: contain;
+    left: -3.2rem; top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,114 @@
+html {font-size: 62.5%;}
+html,body {
+    width: 100%;
+    background: #f4f4f4;
+    margin: 0;}
+ul,li {
+    margin: 0;padding: 0;
+    list-style: none;}
+h1,h2,h3,h4,h5,h6,p {margin: 0; padding: 0;}
+* {box-sizing: border-box;}
+a {text-decoration: none; color: #303030;}
+table{border-collapse: collapse;}
+
+/*=== header ===*/
+
+header{
+    position: fixed;
+    left: 0; top: 100%;
+    width: 100vh; height: 9.3vw;
+    transform:rotate(-90deg);
+    transform-origin: left top;
+    background: #fffdfe;
+}
+
+/*=== navi ===*/
+header{}
+header nav{
+    position: fixed;
+    left: 50vh; bottom: 5vw;
+    transform: translate(-50%,50%);
+}
+header .navi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .navi li{
+    font-size: 1.7rem;
+}
+header .navi li a{
+}
+header .navi .menu{
+    display: inline-block;
+}
+header .navi .menu a{
+    cursor: pointer;
+    padding: 2vh;
+}
+
+header .navi .menu:last-of-type{
+/*    position: relative;*/
+} 
+
+.pop_contact{
+    position: absolute;
+    top: 0; right: 0;
+/*    width: 42rem; height: 12rem;*/
+    transform: rotate(90deg) translate(150%,40%);
+    transform-origin: right top;
+    border: 1px solid #000;
+
+    display: none;
+}
+
+.pop_contact li{font-size: 1.5rem;}
+
+
+
+/*=== logo footer ===*/
+header .logo{
+    position: fixed;
+    right: 2.5vw; bottom: 0;
+    transform: rotate(90deg);
+    z-index: 13;
+    font-size: 3.5rem;
+}
+header .footer{
+    position: fixed;
+    top: 2.5vw; left: 0;
+    transform: rotate(90deg) translateX(50%);
+    z-index: 13;
+    font-size: 10px;
+}
+
+/*=== main ===*/
+
+main{
+    width: 90.7vw;
+    transform: translateX(9.3vw);
+}
+main .contents{
+/*    border: 1px solid #000;*/
+    position: relative;
+    margin: auto;
+    width: 74vw; height: 36.5vw;
+    transform: translateY(calc(100vh/2 - 50%));
+}
+h1{
+    position: fixed;
+    top: -5vh; right: -2vw;
+    font-size: 6rem;
+    color: #dbdbdb;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,69 @@
+@import url('common.css');
+
+
+/*=== main ===*/
+main{}
+header{
+    opacity: 0;
+    transition: 1.5s;
+}
+main .contents{
+    display: flex;
+    overflow: hidden;
+}
+main .back_photo, main .back_intro{
+    position: absolute;
+    z-index: 1;
+    width: 50%; height: 100%;
+    transition:.6s;
+
+}
+main .back_photo{
+    top: 100%; left: 0;
+    background: #dbdbdb;
+}
+main .main_photo{
+    position: absolute;
+    top: 100%; left: 0;
+    z-index: 3;
+    background: #999;
+    width: 50%; height: 100%;
+    transition:.8s;
+}
+
+main .back_intro{
+    background: #e1e1e1;
+    bottom: 100%; right: 0;
+}
+main .introduce{
+    position: absolute;
+    bottom: 100%; right: 0;
+    z-index: 3;
+    width: 50%;height: 100%;
+    background: #fffdfe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition:.8s;
+}
+main .introduce h3{
+    white-space: pre-line;
+    font-size: 3.5rem;
+    
+}
+main .introduce p{
+    white-space: pre-line;
+    font-size: 2rem;
+    margin-top: 8.9vh;
+
+}
+
+
+
+
+
+
+
+

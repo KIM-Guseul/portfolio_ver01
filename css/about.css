@@ -1,16 +1,25 @@
 @import url('common.css');
 
+html,body{-ms-overflow-style: none;}
+::-webkit-scrollbar {display: none;}
+h1{ 
+    z-index: -1;
+    opacity: 0; transition: 1.2s;
+}
+
 /*=== intsta_introduce ===*/
 main .contents{
     display: flex;
 }
 main .insta_st{
     position: fixed;
-    top: 0; left: 0;
+    top: 100%; left: 0;
     width: 15.4vw; height: 36.5vw;
     background: #fffdfe;
     font-size: 1.2rem;
     padding: 0 0.5vw;
+    transition:.8s;
+
 }
 
 .insta_st .name{
@@ -72,21 +81,24 @@ main .insta_st{
 }
 
 /*=== page 01 ===*/
+.con_info{
+    position: absolute;
+    bottom: 100%; right: 0;
+    width: 74vw; height: 36.5vw;
+    overflow:hidden;
+    transition:.8s;
+}
+
+.con_info > div{
+    position:relative;height:100%;
+    pointer-events: none;
+}
+
 h2{
     font-size: 2.5rem;
     color: #0d548a;
     margin-bottom: 3.3vw;
 }
-.con_info{
-    position: relative;
-    width: 74vw; height: 36.5vw;
-    overflow-y:auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-.con_info::-webkit-scrollbar { 
-    display: none;
-  }
 .page_01{
     position: absolute;
     top: 0%; right: 0;
@@ -97,9 +109,9 @@ h2{
     position: absolute;
     top: 100%; right: 0;
     width: 52.6vw; height: 36.5vw;
-/*    border: 1px solid #999;*/
 }
 .education{
+    position: relative;
     width:50%;
 }
 .experience{
@@ -123,6 +135,20 @@ table tr th:nth-of-type(2){
     padding-left: 1.5vw;
 }
 
+.scroll{
+    position: absolute;
+    bottom: 1rem; right: 0;
+    transform: translateX(50%);
+    height: 3rem;
+    animation: scroll 1.5s linear infinite;
+}
+@keyframes scroll{
+    0%{transform:translateY(0);}
+    25%{transform:translateY(-15%);}
+    50%{transform:translateY(0%);}
+    75%{transform:translateY(15%);}
+    100%{transform:translateY(0);}
+}
 
 /*=== page 02 ===*/
 .skills{

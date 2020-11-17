@@ -2,10 +2,13 @@
 
 main .contents{
     position: relative;
-    border: 1px solid #000;
     margin: auto;
     width: 74vw; height:calc(100vh - (100vh - 36.5vw)/2);
     transform: translateY(calc((100vh - 36.5vw)/2));
+    
+/*    transform: translateY(calc((100vh - 36.5vw)/2)) scale(.5);*/
+/*    opacity: 0;*/
+    transition: .8s;
 }
 
 .work{
@@ -13,7 +16,7 @@ main .contents{
 }
 .work figure{
     position: relative;
-    height: 30%;
+    height: 35%;
 
 }
 .work figure b{

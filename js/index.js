@@ -44,7 +44,7 @@ window.addEventListener('DOMContentLoaded', function () {
             var link = e.target.getAttribute('href');
             var page = e.target.dataset.num;
 
-            if (page == 0 || page == 1) {
+         if(page == 0 || page == 1){
                 conHide();
                 setTimeout(pageMv, 800);
 
@@ -59,12 +59,7 @@ window.addEventListener('DOMContentLoaded', function () {
         //        var page = localStorage.page;
         //        menu.children[page].classList.add('active');
     }
-
-
-
-
-
-
-
+    
+/*=============================================*/
 
 });

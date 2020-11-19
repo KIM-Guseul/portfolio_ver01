@@ -4,7 +4,7 @@
             "tit":"파랑새 극장",
             "thumb":"img/p_theater.jpg",
             "date":"2020.08 - 2020.10",
-            "bref":"UI/UX",
+            "bref":"UI / UX",
             "work":"기획 디자인 구현",
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
             "detail":"설명설명설명",
@@ -15,7 +15,7 @@
             "tit":"대한민국 막걸리 페스티벌",
             "thumb":"img/p_festival.jpg",
             "date":"2020.08 - 2020.10",
-            "bref":"UI/UX",
+            "bref":"UI / UX",
             "work":"기획 디자인 구현",
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
             "detail":"설명설명설명",
@@ -24,7 +24,7 @@
         
         {  
             "tit":"KLAVU",
-            "thumb":"img/p_festival.jpg",
+            "thumb":"img/p_cosmetic.jpg",
             "date":"2020.08 - 2020.10",
             "work":"기획 디자인 구현",
             "bref":"DESIGN",
@@ -35,7 +35,7 @@
         
         {  
             "tit":"Mangez-Moi",
-            "thumb":"img/p_festival.jpg",
+            "thumb":"img/p_Manger-Moi.png",
             "date":"2020.08 - 2020.10",
             "work":"기획 디자인 구현",
             "bref":"DESIGN",
@@ -46,7 +46,7 @@
         
         {   
             "tit":"PLAY",
-            "thumb":"img/p_festival.jpg",
+            "thumb":"img/p_play.jpg",
             "date":"2020.08 - 2020.10",
             "work":"기획 디자인 구현",
             "bref":"DESIGN",
@@ -57,7 +57,7 @@
         
         {   
             "tit":"UI Design",
-            "thumb":"img/p_festival.jpg",
+            "thumb":"img/p_portfolio.jpg",
             "date":"2020.08 - 2020.10",
             "work":"기획 디자인 구현",
             "bref":"DESIGN",

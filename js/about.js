@@ -2,14 +2,14 @@ window.addEventListener('DOMContentLoaded', function (){
     $('header').load('load.html .header', funNav);
 
     
-    /*=== contents load ===*/
+/*=== contents load ===*/
     var insta_st = document.querySelector('.insta_st');
     var con_info = document.querySelector('.con_info');
     var title = document.querySelector('h1');
-    
+    var icScroll = document.querySelector('.scroll');
     
     setTimeout(conLoad, 30);
-    setTimeout(showTit, 830);
+    setTimeout(showTit, 430);
     
     function conLoad() {
         insta_st.style = "top : 0%;";
@@ -17,14 +17,18 @@ window.addEventListener('DOMContentLoaded', function (){
     }
     function showTit(){
         title.style = "opacity:1;";
+        icScroll.style = "opacity:1;";
     }
     function conHide() {
         insta_st.style = "top : -100%;";
         con_info.style = "bottom : -100%;";
     }
+    function TitHide(){
+        title.style = "opacity:0;";
+        icScroll.style = "opacity:0;";
+    }
     
-    // === mene click ===//
-    
+// === menu click ===//
     function funNav() {
         var menu = document.querySelector('.navi');
 
@@ -34,9 +38,10 @@ window.addEventListener('DOMContentLoaded', function (){
             var link = e.target.getAttribute('href');
             var page = e.target.dataset.num;
 
-            if (page == 0 || page == 1) {
+         if(page == 0 || page == 1){
                 conHide();
-                setTimeout(pageMv, 800);
+                setTimeout(TitHide, 100);
+                setTimeout(pageMv, 820);
 
                 function pageMv() {
                     localStorage.page = page;
@@ -50,8 +55,7 @@ window.addEventListener('DOMContentLoaded', function (){
         //        menu.children[page].classList.add('active');
     }
 
-
-    /*=== scroll event ===*/
+/*=== scroll event ===*/
     var conFrame = document.querySelector('.con_info');
     var conDiv = document.querySelector('.con_info > div');
     var page_02 = document.querySelector('.page_02');

@@ -1,12 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:700);
+
 html {font-size: 62.5%;}
 html,body {
     width: 100%;
     background: #f4f4f4;
     margin: 0;}
+*{
+    color:#1b1b2f;
+    font-family: 'Inconsolata';
+}
+
 ul,li {
     margin: 0;padding: 0;
     list-style: none;}
-h1,h2,h3,h4,h5,h6,p {margin: 0; padding: 0;}
+h1,h2,h3,h4,h5,h6,p{margin: 0; padding: 0;}
 * {box-sizing: border-box;}
 a {text-decoration: none; color: #1b1b2f;}
 table{border-collapse: collapse;}
@@ -27,6 +34,7 @@ header nav{
     line-height: 9.3vw;
 }
 header .navi{
+    position: relative;
     display: flex;
     justify-content: center;
 }
@@ -44,9 +52,15 @@ header .navi .menu a{
 }
 
 
-header .navi .menu:last-of-type{} 
-.pop_contact{}
-.pop_contact span{}
+header .navi .menu:last-of-type{
+    position: relative;
+} 
+.pop_contact{
+
+}
+.pop_contact span{
+    
+}
 
 /*=== logo footer ===*/
 header .logo{
@@ -81,11 +95,8 @@ main .contents{
 main .hidden{
     position: relative;
     width: 100%; height: 100%;
-/*    overflow: hidden;*/
+    overflow: hidden;
     transform: rotate(0deg);
-    
-    border: 1px solid #000;
-
 }
 
 h1{
@@ -93,7 +104,10 @@ h1{
     z-index: -1;
     top: -5vh; right: -2vw;
     font-size: 6rem;
+/*    text-shadow: 0.2rem 0.2rem 0.3rem #c7c6c6;*/
     color: #dbdbdb;
+    opacity: 0; transition: 1.2s;
+
 }
 
 

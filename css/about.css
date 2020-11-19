@@ -2,10 +2,6 @@
 
 html,body{-ms-overflow-style: none;}
 ::-webkit-scrollbar {display: none;}
-h1{ 
-    z-index: -1;
-    opacity: 0; transition: 1.2s;
-}
 
 /*=== intsta_introduce ===*/
 main .contents{
@@ -19,7 +15,6 @@ main .insta_st{
     font-size: 1.2rem;
     padding: 0 0.5vw;
     transition:.8s;
-
 }
 
 .insta_st .name{
@@ -138,9 +133,12 @@ table tr th:nth-of-type(2){
 .scroll{
     position: absolute;
     bottom: 1rem; right: 0;
-    transform: translateX(50%);
+    transform: translateX(-50%);
     height: 3rem;
     animation: scroll 1.5s linear infinite;
+    
+    opacity: 0;
+    transition: 1.2s;
 }
 @keyframes scroll{
     0%{transform:translateY(0);}

@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', function () {
     $('header').load('load.html .header', funNav);
 
-    // === main load ===//
+// === main load ===//
     var conPhoto = document.querySelector('.main_photo');
     var backPhoto = document.querySelector('.back_photo');
     var conIntro = document.querySelector('.introduce');
@@ -32,8 +32,41 @@ window.addEventListener('DOMContentLoaded', function () {
         backPhoto.style = "top : -100%;";
         backIntro.style = "bottom : -100%;";
     }
+    
+    
+// === typing effect ===//
+    var n = 0;
+    var showText = function (target, message, idx, interval, num) {
+      var len = message[num].length; // len : 각 행의 문자.length / num : 행.length
+        
+      if (idx < len) { 
+        $(target).append(message[num][idx++]); //행의 문자수만큼 함수 실행
+        setTimeout(function () { showText(target, message, idx, interval, num); }, interval);   
+          
+      }else{
+        n += 1;
+        idx = 0; 
+          
+        if( n < message.length ) { //n이 행의 수(3)보다 작을때
+            $(target).append("<br>");
+            showText(target, message, idx, interval, n); 
+        }
+      }
+}
 
-    // === mene click ===//
+$(document).ready(function() {
+  
+    var text = $('.introduce h3').html().split('<br>'); //.split('<br>') h3을 br 기준으로 배열화
+      
+    $('.introduce h3').html('');
+    
+    setTimeout(function() {    
+    showText(".introduce h3", text, 0, 130, 0); 
+    }, 2000);
+});
+
+
+// === menu click ===//
 
     function funNav() {
         var menu = document.querySelector('.navi');

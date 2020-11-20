@@ -62,7 +62,6 @@ window.addEventListener('DOMContentLoaded', function () {
             }
         } // load end
     });
-
     
 /*=== contents load ===*/
     var con = document.querySelector('.hidden');

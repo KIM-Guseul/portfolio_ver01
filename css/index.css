@@ -42,22 +42,14 @@ main .introduce{
     width: 50%;height: 100%;
     background: #fffdfe;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     transition:.8s;
 }
 main .introduce h3{
-    white-space: pre-line;
-    font-size: 3.5rem;
+    font-size: 9.5rem;
+    line-height: 1.2
     
-}
-main .introduce p{
-    white-space: pre-line;
-    font-size: 2rem;
-    margin-top: 8.9vh;
-
 }
 
 

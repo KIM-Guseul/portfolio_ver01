@@ -1,76 +1,94 @@
 @import url('common.css');
 
-h1 {color: rgba(27,27,27,0.7);}
+html,body{-ms-overflow-style: none;}
+::-webkit-scrollbar {display: none;}
 
-main .contents {display: flex;}
-
-main .con_viewer {
-    position: relative;
-    width: 50%;
-    height: 100%;
-}
-
-.v_com{}
-.v_com img {
-    width: 37vw;
-    position: absolute;
+h1 {
+    color: #1b1b2f; 
+/*    color: rgba(27,27,27,0.7); */
     z-index: 1;
-    top: 5.5vw; left: 0;
-}
-.v_com .canvas{
-    position: absolute;
-    z-index: 2;
-    left: 5vw; top: 7.5vw;
-    width: 27vw; height: 17.5vw;
-    background: #fff;
 }
 
-.v_phone{}
-.v_phone img {
-    width: 18vw;
-    position: absolute;
-    z-index: 3;
-    bottom: 3vw; right: -4vw;
+h1 a{
+    display: inline-block;
+    width: 1.8rem; height: 3rem;
+    transform: translateY(-1rem);
+    margin: 0 2rem;
 }
-.v_phone .canvas{
-    position: absolute;
-    z-index: 4;
-    right: -1.9vw; bottom: 7.5vw;
-    width: 7.2vw; height: 12vw;
-    background: #fff;
+h1 .prev{
+    background: url('../img/ic_prev.png') no-repeat;
+    background-size: contain;
+}
+h1 .next{
+
+    background: url('../img/ic_next.png') no-repeat;
+    background-size: contain;
+}
+main .hidden {display: flex;}
+
+/*================================================*/
+
+main .con_viewer{
+    width: 50%; height: 100%;
+    position: relative;
 }
 
-main .con_detail {
+main .con_viewer .m_com{
+    width: 100%; height: 100%;
+    
+}
+main .con_viewer .m_com img{
+    width: 90%;
+    position: absolute;
+    top: 50%; left: 0;
+    z-index: 0;
+    transform: translateY(-50%);
+}
+
+
+main .con_viewer .m_phone{
+    width: 100%; height: 100%;
+}
+main .con_viewer .m_phone img{
+    width: 30%;
+    position: absolute;
+    bottom: 5vw; right: -3vw;
+    z-index: 1;
+}
+
+/*================================================*/
+
+main .con_info{
+    width: 50%; height: 100%;
     background: #fcfdfd;
-    width: 50%;
-    height: 100%;
-    padding-left: 6vw;
+    padding: 7.2vw 5.5vw;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
-    overflow: hidden;
-    white-space: pre-line;
+    overflow: auto;
 }
 
-.con_detail .link a {
-    display: inline-block;
-    margin-top: 5vw;
-    padding: 0.4rem 0.8rem;
+main .con_info a{
     font-size: 2.5rem;
     color: #0d548a;
+    padding: 0.5rem;
     border-top: 2px solid #0d548a;
     border-bottom: 2px solid #0d548a;
+    
 }
-
-.con_detail .info_01 {
-    margin-top: 2.5vw;
+main .con_info .info_bref{
     font-size: 1.5rem;
+    margin: 5vw 0 4.5vw 0;
     line-height: 2;
 }
-
-.con_detail .info_02 {
-    margin-top: 3vw;
+main .con_info .info_detail{
     font-size: 1.5rem;
-    line-height: 1.6;
-
+    text-align: center;
+    line-height: 1.7;
 }
+
+
+
+
+

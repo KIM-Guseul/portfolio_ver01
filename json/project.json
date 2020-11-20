@@ -7,8 +7,10 @@
             "bref":"UI / UX",
             "work":"기획 디자인 구현",
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
-            "detail":"설명설명설명",
-            "link":"https://kim-guseul.github.io/theater/"
+            "detail":"파랑새 극장 파랑새 극장 파랑새 극장 파랑새 극장 파랑새 극장",
+            "link":"https://kim-guseul.github.io/theater/",
+            "img_c":"",
+            "img_p":""
         },
         
         {  
@@ -18,8 +20,10 @@
             "bref":"UI / UX",
             "work":"기획 디자인 구현",
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
-            "detail":"설명설명설명",
-            "link":"https://kim-guseul.github.io/festival/"
+            "detail":"대한민국 막걸리 페스티벌 대한민국 막걸리 페스티벌 대한민국 막걸리 페스티벌",
+            "link":"https://kim-guseul.github.io/festival/",
+            "img_c":"",
+            "img_p":""
         },
         
         {  
@@ -29,8 +33,10 @@
             "work":"기획 디자인 구현",
             "bref":"DESIGN",
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
-            "detail":"설명설명설명",
-            "link":"https://kim-guseul.github.io/theater/"
+            "detail":"KLAVU KLAVU KLAVU KLAVU KLAVU KLAVU",
+            "link":"https://kim-guseul.github.io/theater/",
+            "img_c":"",
+            "img_p":""
         },
         
         {  
@@ -40,8 +46,10 @@
             "work":"기획 디자인 구현",
             "bref":"DESIGN",
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
-            "detail":"설명설명설명",
-            "link":"https://github.com/KIM-Guseul"
+            "detail":"Mangez-Moi Mangez-Moi Mangez-Moi Mangez-Moi",
+            "link":"https://github.com/KIM-Guseul",
+            "img_c":"",
+            "img_p":""
         },
         
         {   
@@ -51,8 +59,10 @@
             "work":"기획 디자인 구현",
             "bref":"DESIGN",
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
-            "detail":"설명설명설명",
-            "link":"https://github.com/KIM-Guseul"
+            "detail":"PLAY PLAY PLAY PLAY PLAY PLAY",
+            "link":"https://github.com/KIM-Guseul",
+            "img_c":"",
+            "img_p":""
         },
         
         {   
@@ -62,8 +72,10 @@
             "work":"기획 디자인 구현",
             "bref":"DESIGN",
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
-            "detail":"설명설명설명",
-            "link":"https://github.com/KIM-Guseul"
+            "detail":"UI Design UI Design UI Design UI Design",
+            "link":"https://github.com/KIM-Guseul",
+            "img_c":"",
+            "img_p":""
         }
     ]
 }

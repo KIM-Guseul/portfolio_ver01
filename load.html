@@ -9,7 +9,7 @@
             <li>x</li>
             <li class="menu">
                 <a>CONTACT</a>
-<!--
+                <!--
                 <div class="pop_contact">
                     <p>010 8829 5317</p>
                     <p><a href="#">beadkim067@gmail.com</a></p>
@@ -19,6 +19,27 @@
             </li>
         </ul>
     </nav>
-    
+
     <span class="footer">@ 2020</span>
+</div>
+
+<div class="pointer">
+    <div id="cursor">
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <filter id="goo">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="my-blur" />
+                <feColorMatrix in="my-blur" mode="matrix" values="
+                1 0 0 0 0
+                0 1 0 0 0
+                0 0 1 0 0
+                0 0 0 20 -8" result="my-gooey" />
+            </filter>
+        </defs>
+    </svg>
 </div>

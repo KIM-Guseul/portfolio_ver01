@@ -7,35 +7,54 @@ window.addEventListener('DOMContentLoaded', function () {
         type: 'get',
         data: {},
         success: function (data) {
-            var tit, thumb, bref, total, listTag = '';
+            var tit, thumb, bref, total, order, listTag = '';
             function proList() {
                 data.project.forEach(function (value, key) {
                     tit = value.tit;
                     thumb = value.thumb;
                     bref = value.bref;
+                    
+                    order = key+1;
                     total = data.project.length;
                     
-                    if(key < 9){key = '0'+(key+1);}
+                    if(order < 10){order = '0'+order;}
                     if(total < 10){total = '0'+total;}
                     
-                    listTag +="<a href='work_detail.html' class='work'>";
+                    listTag +="<a href='work_detail.html' class='work'  data-num='"+key+"'>";
+                    
                     listTag +="<figure>";
-                    listTag +="<b>" + (key) + "</b>";
+                    listTag +="<b>" + order + "</b>";
                     listTag +="<img src='" + thumb + "' alt='" + tit + "'>";
                     listTag +="<figcaption>";
                     listTag +="<span class='bref'>";
                     listTag +="<span>|&nbsp;" + bref + "&nbsp;</span>";
                     listTag +="<span>|&nbsp;" + tit + "&nbsp;</span>";
                     listTag +="</span>";
+                    
                     listTag +="<span class='order'>";
-                    listTag +="<span>&nbsp;" + key + "</span>";
+                    listTag +="<span>&nbsp;" + order + "</span>";
                     listTag +="<span>&nbsp;/&nbsp;" + total + "&nbsp;</span>";
                     listTag +="</span>";
                     listTag +="</figcaption>";
                     listTag +="</figure>";
                     listTag +="</a>";
-                }); $('.hidden').append(listTag);
+                }); 
+                $('.hidden').append(listTag);
+
             } proList();
+            
+        /*=== work_detail ===*/
+            var work = document.querySelectorAll('.work');
+            work.forEach(function(el){
+                el.addEventListener('click',funMove);
+            });
+            function funMove(e){
+                e.preventDefault();
+            
+                localStorage.num = this.dataset.num;
+                location.href = this.href;
+                
+            }
             
             
     /*=== scroll event ===*/
@@ -98,14 +117,18 @@ window.addEventListener('DOMContentLoaded', function () {
 /*=== menu click event ===*/
     function funNav() {
         var menu = document.querySelector('.navi');
-
-        menu.addEventListener('click', function (e) {
+        menu.addEventListener('click', funIndex);
+        
+        var logo = document.querySelector('.logo');
+        logo.addEventListener('click', funIndex);
+        
+        function funIndex(e){
             e.preventDefault();
 
             var link = e.target.getAttribute('href');
             var page = e.target.dataset.num;
 
-            if (page == 0 || page == 1) {
+            if(link){
                 
                 bfMove();
                 setTimeout(pageMv, 820);
@@ -114,10 +137,8 @@ window.addEventListener('DOMContentLoaded', function () {
                     localStorage.page = page;
                     location.href = link;
                 }
-            } else {
-                console.log('contact');
-            }
-        });
+            } 
+        };
         //        var page = localStorage.page;
         //        menu.children[page].classList.add('active');
         

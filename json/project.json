@@ -9,10 +9,9 @@
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
             "detail":"파랑새 극장 파랑새 극장 파랑새 극장 파랑새 극장 파랑새 극장",
             "link":"https://kim-guseul.github.io/theater/",
-            "img_c":"",
-            "img_p":""
+            "cImg":"img/c_theater.jpg",
+            "mImg":"img/m_theater.jpg"
         },
-        
         {  
             "tit":"대한민국 막걸리 페스티벌",
             "thumb":"img/p_festival.jpg",
@@ -22,10 +21,9 @@
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
             "detail":"대한민국 막걸리 페스티벌 대한민국 막걸리 페스티벌 대한민국 막걸리 페스티벌",
             "link":"https://kim-guseul.github.io/festival/",
-            "img_c":"",
-            "img_p":""
+            "cImg":"img/c_festival.jpg",
+            "mImg":"img/m_festival.jpg"
         },
-        
         {  
             "tit":"KLAVU",
             "thumb":"img/p_cosmetic.jpg",
@@ -35,10 +33,9 @@
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
             "detail":"KLAVU KLAVU KLAVU KLAVU KLAVU KLAVU",
             "link":"https://kim-guseul.github.io/theater/",
-            "img_c":"",
-            "img_p":""
+            "cImg":"img/c_cosmetic.jpg",
+            "mImg":"img/m_cosmetic.jpg"
         },
-        
         {  
             "tit":"Mangez-Moi",
             "thumb":"img/p_Manger-Moi.png",
@@ -48,10 +45,9 @@
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
             "detail":"Mangez-Moi Mangez-Moi Mangez-Moi Mangez-Moi",
             "link":"https://github.com/KIM-Guseul",
-            "img_c":"",
-            "img_p":""
+            "cImg":"",
+            "mImg":"img/m_mangezmoi.jpg"
         },
-        
         {   
             "tit":"PLAY",
             "thumb":"img/p_play.jpg",
@@ -61,10 +57,9 @@
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
             "detail":"PLAY PLAY PLAY PLAY PLAY PLAY",
             "link":"https://github.com/KIM-Guseul",
-            "img_c":"",
-            "img_p":""
+            "cImg":"img/c_play.jpg",
+            "mImg":""
         },
-        
         {   
             "tit":"UI Design",
             "thumb":"img/p_portfolio.jpg",
@@ -74,8 +69,8 @@
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
             "detail":"UI Design UI Design UI Design UI Design",
             "link":"https://github.com/KIM-Guseul",
-            "img_c":"",
-            "img_p":""
+            "cImg":"img/c_uidesign.jpg",
+            "mImg":""
         }
     ]
 }

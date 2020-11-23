@@ -4,7 +4,8 @@ html {font-size: 62.5%;}
 html,body {
     width: 100%;
     background: #f4f4f4;
-    margin: 0;}
+    margin: 0;
+}
 *{
     color:#1b1b2f;
     font-family: 'Inconsolata';
@@ -76,8 +77,6 @@ header .footer{
     font-size: 10px;
 }
 
-
-
 /*=== main ===*/
 
 main{
@@ -101,7 +100,7 @@ main .hidden{
 h1{
     position: fixed;
     z-index: -1;
-    top: -5vh; right: -2vw;
+    top: -4vh; right: -2vw;
     font-size: 6rem;
 /*    text-shadow: 0.2rem 0.2rem 0.3rem #c7c6c6;*/
     color: #dbdbdb;
@@ -110,6 +109,38 @@ h1{
 }
 
 
+/*=== cursor ===*/
+/*
+.pointer{
+    position: relative;
+}
+*/
+#cursor {
+  position: absolute;
+  z-index: 1;
+  filter: url("#goo");
+  transform-origin: center;
+}
+#cursor .blob {
+  position: absolute;
+  margin: -15px 0 0 -15px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: #1b1b2f;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+}
+#cursor .blob:nth-child(2) {
+  z-index: -1;
+}
+#cursor .blob:nth-child(3) {
+  z-index: -2;
+}
+#cursor .blob:nth-child(4) {
+  z-index: -3;
+}
 
 
 

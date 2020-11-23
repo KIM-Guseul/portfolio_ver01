@@ -70,28 +70,34 @@ $(document).ready(function() {
 
     function funNav() {
         var menu = document.querySelector('.navi');
+        menu.addEventListener('click', funIndex);
+        
+        var logo = document.querySelector('.logo');
+        logo.addEventListener('click', funIndex);
+            
+            function funIndex(e){
+                e.preventDefault();
 
-        menu.addEventListener('click', function (e) {
-            e.preventDefault();
+                var link = e.target.getAttribute('href');
+                var page = e.target.dataset.num;
 
-            var link = e.target.getAttribute('href');
-            var page = e.target.dataset.num;
+             if(link){
+                    conHide();
+                    setTimeout(pageMv, 800);
 
-         if(page == 0 || page == 1){
-                conHide();
-                setTimeout(pageMv, 800);
-
-                function pageMv() {
-                    localStorage.page = page;
-                    location.href = link;
+                    function pageMv() {
+                        localStorage.page = page;
+                        location.href = link;
+                    }
                 }
-            } else {
-                console.log('contact');
             }
-        });
+        
         //        var page = localStorage.page;
         //        menu.children[page].classList.add('active');
+        
+    
     }
+    
     
 /*=============================================*/
 

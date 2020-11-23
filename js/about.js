@@ -31,14 +31,18 @@ window.addEventListener('DOMContentLoaded', function (){
 // === menu click ===//
     function funNav() {
         var menu = document.querySelector('.navi');
+        menu.addEventListener('click', funIndex);
+        
+        var logo = document.querySelector('.logo');
+        logo.addEventListener('click', funIndex);
 
-        menu.addEventListener('click', function (e) {
+        function funIndex(e){
             e.preventDefault();
 
             var link = e.target.getAttribute('href');
             var page = e.target.dataset.num;
 
-         if(page == 0 || page == 1){
+         if(link){
                 conHide();
                 setTimeout(TitHide, 100);
                 setTimeout(pageMv, 820);
@@ -47,10 +51,8 @@ window.addEventListener('DOMContentLoaded', function (){
                     localStorage.page = page;
                     location.href = link;
                 }
-            } else {
-                console.log('contact');
             }
-        });
+        };
         //        var page = localStorage.page;
         //        menu.children[page].classList.add('active');
     }

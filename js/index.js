@@ -6,11 +6,9 @@ window.addEventListener('DOMContentLoaded', function () {
     var backPhoto = document.querySelector('.back_photo');
     var conIntro = document.querySelector('.introduce');
     var backIntro = document.querySelector('.back_intro');
-    var header = document.querySelector('header');
 
-    setTimeout(backLoad, 500);
-    setTimeout(conLoad, 1100);
-    setTimeout(headLoad, 1800);
+    setTimeout(backLoad, 300);
+    setTimeout(conLoad, 900);
 
     function backLoad() {
         backPhoto.style = "top : 0%;";
@@ -52,18 +50,18 @@ window.addEventListener('DOMContentLoaded', function () {
             showText(target, message, idx, interval, n); 
         }
       }
-}
+    }
 
-$(document).ready(function() {
-  
-    var text = $('.introduce h3').html().split('<br>'); //.split('<br>') h3을 br 기준으로 배열화
-      
-    $('.introduce h3').html('');
-    
-    setTimeout(function() {    
-    showText(".introduce h3", text, 0, 130, 0); 
-    }, 2000);
-});
+    $(document).ready(function() {
+
+        var text = $('.introduce h3').html().split(','); //.split('<br>') h3을 br 기준으로 배열화
+
+        $('.introduce h3').html('');
+
+        setTimeout(function() {    
+        showText(".introduce h3", text, 0, 110, 0); 
+        }, 2000);
+    });
 
 
 // === menu click ===//

@@ -1,11 +1,23 @@
 {
     "project":[
+        {   
+            "tit":"KIM_GUSEUL",
+            "thumb":"img/p_portfolio.jpg",
+            "date":"2020.10 - 2020.11",
+            "work":"기획 디자인 구현",
+            "bref":"WEB / MOBILE",
+            "tech":"HTML5 CSS3 JavaScript Jquery Json",
+            "detail":"KIM_GUSEUL KIM_GUSEUL KIM_GUSEUL KIM_GUSEULKIM_GUSEULKIM_GUSEUL",
+            "link":"https://kim-guseul.github.io/portfolio_ver01/",
+            "cImg":"img/c_portfolio.jpg",
+            "mImg":""
+        },
         {
             "tit":"파랑새 극장",
             "thumb":"img/p_theater.jpg",
             "date":"2020.08 - 2020.10",
-            "bref":"UI / UX",
-            "work":"기획 디자인 구현",
+            "bref":"WEB / MOBILE",
+            "work":"기획 벤치마킹 구현",
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
             "detail":"파랑새 극장 파랑새 극장 파랑새 극장 파랑새 극장 파랑새 극장",
             "link":"https://kim-guseul.github.io/theater/",
@@ -16,7 +28,7 @@
             "tit":"대한민국 막걸리 페스티벌",
             "thumb":"img/p_festival.jpg",
             "date":"2020.08 - 2020.10",
-            "bref":"UI / UX",
+            "bref":"WEB / MOBILE",
             "work":"기획 디자인 구현",
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
             "detail":"대한민국 막걸리 페스티벌 대한민국 막걸리 페스티벌 대한민국 막걸리 페스티벌",
@@ -58,18 +70,6 @@
             "detail":"PLAY PLAY PLAY PLAY PLAY PLAY",
             "link":"https://github.com/KIM-Guseul",
             "cImg":"img/c_play.jpg",
-            "mImg":""
-        },
-        {   
-            "tit":"UI Design",
-            "thumb":"img/p_portfolio.jpg",
-            "date":"2020.08 - 2020.10",
-            "work":"기획 디자인 구현",
-            "bref":"DESIGN",
-            "tech":"HTML5 CSS3 JavaScript Jquery Json",
-            "detail":"UI Design UI Design UI Design UI Design",
-            "link":"https://github.com/KIM-Guseul",
-            "cImg":"img/c_uidesign.jpg",
             "mImg":""
         }
     ]

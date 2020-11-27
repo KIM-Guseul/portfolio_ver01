@@ -3,10 +3,7 @@
 
 /*=== main ===*/
 main{}
-header{
-    opacity: 0;
-    transition: 1.5s;
-}
+header{}
 main .contents{
     display: flex;
     overflow: hidden;
@@ -20,19 +17,22 @@ main .back_photo, main .back_intro{
 }
 main .back_photo{
     top: 100%; left: 0;
-    background: #dbdbdb;
+    background: #8c9da7;
 }
 main .main_photo{
     position: absolute;
     top: 100%; left: 0;
     z-index: 3;
-    background: #999;
     width: 50%; height: 100%;
-    transition:.8s;
+    transition:.6s;
+}
+main .main_photo img{
+    width: 100%; height: 100%;
+    object-fit: cover;
 }
 
 main .back_intro{
-    background: #e1e1e1;
+    background: #93a7a6;
     bottom: 100%; right: 0;
 }
 main .introduce{
@@ -44,12 +44,12 @@ main .introduce{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition:.8s;
+    transition:.6s;
 }
 main .introduce h3{
-    font-size: 9.5rem;
-    line-height: 1.2
-    
+    font-size: 9rem;
+    text-align: center;
+    line-height: 1.2;
 }
 
 

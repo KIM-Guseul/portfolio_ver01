@@ -1,7 +1,6 @@
 window.addEventListener('DOMContentLoaded', function (){
     $('header').load('load.html .header', funNav);
 
-    
 /*=== contents load ===*/
     var insta_st = document.querySelector('.insta_st');
     var con_info = document.querySelector('.con_info');
@@ -57,7 +56,7 @@ window.addEventListener('DOMContentLoaded', function (){
         //        menu.children[page].classList.add('active');
     }
 
-/*=== scroll event ===*/
+///*=== scroll event ===*/
     var conFrame = document.querySelector('.con_info');
     var conDiv = document.querySelector('.con_info > div');
     var page_02 = document.querySelector('.page_02');

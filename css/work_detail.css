@@ -29,6 +29,8 @@ main .hidden {display: flex;}
 main .con_viewer{
     width: 50%; height: 100%;
     position: relative;
+    top:100%;
+    transition: .8s;
 }
 main .con_viewer .note{
     display: inline-block;
@@ -64,14 +66,14 @@ main .con_viewer .m_mob{
 main .con_viewer .m_mob > img{
     width: 30%;
     position: absolute;
-    bottom: 5vw; right: -3vw;
+    bottom: 3.5vw; right: -3vw;
     z-index: 1;
 }
 .m_mob .con_mob{
-    width: 20%; height: 36%;
+    width: 20%; height: 41%;
     position: absolute;
     z-index: 2;
-    bottom: 8.5vw; right: -1vw;
+    bottom: 7.2vw; right: -0.8vw;
     overflow:auto;
 }
 .m_mob .con_mob > img{
@@ -82,6 +84,8 @@ main .con_viewer .m_mob > img{
 
 main .con_info{
     width: 50%; height: 100%;
+    transform: translateY(-100%);
+    transition: .8s;
     background: #fcfdfd;
     padding: 7.2vw 5.5vw;
     display: flex;

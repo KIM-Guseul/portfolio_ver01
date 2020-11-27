@@ -64,15 +64,15 @@ header .navi .menu a{
 /*=== logo footer ===*/
 header .logo{
     position: fixed;
-    right: 2.5vw; bottom: 0;
+    right: 2vh; bottom: -1.5rem;
     transform: rotate(90deg);
     z-index: 13;
     font-size: 3.5rem;
 }
 header .footer{
     position: fixed;
-    top: 2.5vw; left: 0;
-    transform: rotate(90deg) translateX(50%);
+    top: 50%; left: 0;
+    transform: rotate(90deg) translateX(-50%);
     z-index: 13;
     font-size: 10px;
 }
@@ -87,7 +87,7 @@ main .contents{
 /*    border: 1px solid #000;*/
     position: relative;
     margin: auto;
-    width: 74vw; height: 36.5vw;
+    width: 80vw; height: 36.5vw;
     transform: translateY(calc(100vh/2 - 50%));
 }
 main .hidden{
@@ -100,49 +100,13 @@ main .hidden{
 h1{
     position: fixed;
     z-index: -1;
-    top: -4vh; right: -2vw;
+    top: -4.5vh; right: -2vw;
     font-size: 6rem;
 /*    text-shadow: 0.2rem 0.2rem 0.3rem #c7c6c6;*/
     color: #dbdbdb;
     opacity: 0; transition: 1.2s;
 
 }
-
-
-/*=== cursor ===*/
-/*
-.pointer{
-    position: relative;
-}
-*/
-#cursor {
-  position: absolute;
-  z-index: 1;
-  filter: url("#goo");
-  transform-origin: center;
-}
-#cursor .blob {
-  position: absolute;
-  margin: -15px 0 0 -15px;
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  background: #1b1b2f;
-  top: 50%;
-  left: 50%;
-  pointer-events: none;
-}
-#cursor .blob:nth-child(2) {
-  z-index: -1;
-}
-#cursor .blob:nth-child(3) {
-  z-index: -2;
-}
-#cursor .blob:nth-child(4) {
-  z-index: -3;
-}
-
-
 
 
 

@@ -10,11 +10,12 @@ main .contents{
 main .insta_st{
     position: fixed;
     top: 100%; left: 0;
-    width: 15.4vw; height: 36.5vw;
+    width: 15.4vw; height: 36vw;
     background: #fffdfe;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 0 0.5vw;
     transition:.8s;
+    box-shadow: 0.6rem 0.6rem 0.8rem #999;
 }
 
 .insta_st .name{
@@ -71,22 +72,18 @@ main .insta_st{
     height: 10vw;
     white-space: pre-line;
 }
-.insta_st .tag{
+.insta_st .tag, .insta_st .tag a{
     color: #03519b;
+    line-height: 1.2;
 }
 
 /*=== page 01 ===*/
 .con_info{
     position: absolute;
     bottom: 100%; right: 0;
-    width: 74vw; height: 36.5vw;
-    overflow:hidden;
+    width: 64.6vw; height: 36.5vw;
+    overflow:auto;
     transition:.8s;
-}
-
-.con_info > div{
-    position:relative;height:100%;
-    pointer-events: none;
 }
 
 h2{
@@ -96,15 +93,16 @@ h2{
 }
 .page_01{
     position: absolute;
-    top: 0%; right: 0;
-    width: 52.6vw; height: 36.5vw;
+    top: 0%; left: 7vw;
+    width: 100%; height: 100%;
     display: flex;
 }
 .page_02{
     position: absolute;
-    top: 100%; right: 0;
-    width: 52.6vw; height: 36.5vw;
+    top: 100%; left: 7vw;
+    width: 100%; height: 100%;
 }
+
 .education{
     position: relative;
     width:50%;
@@ -131,14 +129,14 @@ table tr th:nth-of-type(2){
 }
 
 .scroll{
-    position: absolute;
-    bottom: 1rem; right: 0;
+    position: fixed;
+    bottom: 1rem; right: 0.2rem;
     transform: translateX(-50%);
     height: 3rem;
     animation: scroll 1.5s linear infinite;
     
     opacity: 0;
-    transition: 1.2s;
+    transition: 1s;
 }
 @keyframes scroll{
     0%{transform:translateY(0);}
@@ -155,23 +153,27 @@ table tr th:nth-of-type(2){
 
 .skills h3{
     font-size:2rem;
+    margin-bottom: 2vw;
 }
 .skills > div{
     width: 100%;
     display: flex;
 }
-
 .sw{width: 70%;}
-.sw > div{
-    width: 80%;
+.sw article > div{
+    width: 90%;
     display: flex;
-    margin-top: 2.4vw;
-    margin-left: 1vw;
 }
-
+.sw article:last-of-type h3{
+    margin-top: 3.3vw;
+}
+.sw article:last-of-type figure{
+    width: 20%;
+}
 .sw figure{
     width: 50%;
-    margin: 0;
+    margin-bottom: 2vw;
+    margin-left: 1vw;
     display: flex;
     align-items: center;
 }
@@ -198,7 +200,7 @@ table tr th:nth-of-type(2){
     left: 100%;
     background: none;
 }
-.sw div:nth-of-type(2) figure figcaption span:nth-of-type(4), .sw div:nth-of-type(1) figure:nth-of-type(2) figcaption span:nth-of-type(4){
+.js figcaption span:nth-of-type(4), .jquery figcaption span:nth-of-type(4), .ps figcaption span:nth-of-type(4){
     left: 75%;
     background: none;
 }
@@ -211,56 +213,6 @@ table tr th:nth-of-type(2){
     height: 3vw;
     margin-top: 2.4vw;
 }
-
-.contact{
-    width: 100%; height: 35%;
-/*    margin-top: 6.4vw;*/
-}
-
-.contact li {
-    position: relative;
-    margin-bottom: 1vw;
-    margin-left: 4.3rem;
-    font-size: 1.5rem;
-
-}
-.contact li a{
-    display: inline-block;
-    font-size: 1.5rem;
-}
-.contact li::before{
-    content:"";
-    position: absolute;
-    display: inline-block;
-}
-.contact li:nth-of-type(1)::before{
-    width: 1.7rem; height: 2.3rem;
-    background: url('../img/ic_phone.png') no-repeat;
-    background-size: contain;
-    left: -3rem; top: 0;
-}
-.contact li:nth-of-type(2)::before{
-    width: 2rem; height: 1.5rem;
-    background: url('../img/ic_email.png') no-repeat;
-    background-size: contain;
-    left: -3.2rem; top: 0.4rem;
-}
-.contact li:nth-of-type(3)::before{
-    width: 1.9rem; height: 2.3rem;
-    background: url('../img/ic_github.png') no-repeat;
-    background-size: contain;
-    left: -3.2rem; top: 0;
-}
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -7,12 +7,13 @@ window.addEventListener('DOMContentLoaded', function () {
         type: 'get',
         data: {},
         success: function (data) {
-            var tit, thumb, bref, total, order, listTag = '';
+            var tit, thumb, bref, environ, total, order, listTag = '';
             function proList() {
                 data.project.forEach(function (value, key) {
                     tit = value.tit;
                     thumb = value.thumb;
                     bref = value.bref;
+                    environ = value.environ;
                     
                     order = key+1;
                     total = data.project.length;
@@ -27,6 +28,7 @@ window.addEventListener('DOMContentLoaded', function () {
                     listTag +="<img src='" + thumb + "' alt='" + tit + "'>";
                     listTag +="<figcaption>";
                     listTag +="<span class='bref'>";
+                    listTag +="<span>|&nbsp;" + environ + "&nbsp;</span>";
                     listTag +="<span>|&nbsp;" + bref + "&nbsp;</span>";
                     listTag +="<span>|&nbsp;" + tit + "&nbsp;</span>";
                     listTag +="</span>";

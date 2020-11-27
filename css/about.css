@@ -11,23 +11,25 @@ main .insta_st{
     position: fixed;
     top: 100%; left: 0;
     width: 15.4vw; height: 36vw;
+    overflow: auto;
     background: #fffdfe;
     font-size: 1.5rem;
-    padding: 0 0.5vw;
     transition:.8s;
     box-shadow: 0.6rem 0.6rem 0.8rem #999;
 }
 
 .insta_st .name{
-    height: 3.9vw;
+    height: 3.5vw;
     display: flex;
     align-items: center;
+    padding: 0 0.5vw;
+
 }
 .insta_st .name span{
     display: inline-block;
 }
 .insta_st .name > span{
-    width: 2.1vw; height: 2.1vw;
+    width: 4rem; height: 4rem;
     background: #e1e1e1;
     border-radius: 50%;
 }
@@ -40,24 +42,26 @@ main .insta_st{
 }
 .insta_st .name .dot span{
     position: absolute;
-    top: 0; right: 0;
+    right: 0;
     width: 0.25vw; height: 0.25vw;
     background: #838383;
-    border-radius: 50%;
+    border-radius: 100%;
 }
-.insta_st .name .dot span:nth-of-type(1){}
+.insta_st .name .dot span:nth-of-type(1){top: 0; }
 .insta_st .name .dot span:nth-of-type(2){top: 50%;}
 .insta_st .name .dot span:nth-of-type(3){top: 100%;}
 
 .insta_st .photo{
     height: 15.4vw;
     padding: 0;
+    background: #eee;
 }
 
 .insta_st .icon{
     position: relative;
     height: 2vw;
-    padding-top: 0.4vw;
+    padding: 0.4vw 0.5vw 0 0.5vw;
+
 }
 .insta_st .icon img{
     margin-right: 0.5vw;
@@ -65,13 +69,16 @@ main .insta_st{
 .insta_st .icon img:last-of-type{
     position: absolute;
     margin: 0;
-    right: 0;
+    right: 0.5vw;
 }
 
 .insta_st .txt{
     height: 10vw;
     white-space: pre-line;
+    padding: 0 0.5vw;
 }
+ .insta_st .tag{padding: 0 0.5vw;}
+
 .insta_st .tag, .insta_st .tag a{
     color: #03519b;
     line-height: 1.2;

@@ -84,7 +84,6 @@ main{
     transform: translateX(9.3vw);
 }
 main .contents{
-/*    border: 1px solid #000;*/
     position: relative;
     margin: auto;
     width: 80vw; height: 36.5vw;
@@ -102,8 +101,8 @@ h1{
     z-index: -1;
     top: -4.5vh; right: -2vw;
     font-size: 6rem;
-/*    text-shadow: 0.2rem 0.2rem 0.3rem #c7c6c6;*/
-    color: #dbdbdb;
+    text-shadow: 0.3rem 0.3rem 0.5rem #999;
+    color:  #f4f4f4;
     opacity: 0; transition: 1.2s;
 
 }

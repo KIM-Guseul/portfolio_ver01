@@ -90,8 +90,8 @@ window.addEventListener('DOMContentLoaded', function () {
                 }
             }
         
-        //        var page = localStorage.page;
-        //        menu.children[page].classList.add('active');
+                var page = localStorage.page;
+                menu.children[page].classList.add('active');
         
     
     }

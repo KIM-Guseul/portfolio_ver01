@@ -100,7 +100,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
         function conHide() {
             con.style = "transform : translateY(100vh)";
-
         }
 
         function TitHide() {

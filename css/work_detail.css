@@ -102,6 +102,12 @@ main .con_info .git{
     border-top: 2px solid #0d548a;
     border-bottom: 2px solid #0d548a;
 }
+main .con_info .git:hover{
+    color: #b22234;
+    border-top: 2px solid #b22234;
+    border-bottom: 2px solid #b22234;
+}
+
 main .con_info .info_bref{
     font-size: 1.5rem;
     margin: 5vw 0 4.5vw 0;

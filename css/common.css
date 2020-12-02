@@ -98,12 +98,12 @@ h1{
     text-shadow: 0.2rem 0.2rem 0.4rem #999;
     color:  #f4f4f4;
     opacity: 0; transition: 1.2s;
-
 }
 
 
-
-
+@media (max-width:1024px){
+html {font-size: 40%;}
+}
 
 
 

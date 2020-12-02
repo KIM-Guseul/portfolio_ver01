@@ -64,6 +64,7 @@ main .insta_st{
 
 }
 .insta_st .icon img{
+    height: 2rem;
     margin-right: 0.5vw;
 }
 .insta_st .icon img:last-of-type{

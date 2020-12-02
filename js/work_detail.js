@@ -31,7 +31,6 @@ window.addEventListener('DOMContentLoaded', function () {
                 
                 titTag = tit;
                 
-
             /*=== preview ===*/
                 if(cImg !=''){
                     cTag = "<img src='"+ cImg +"' alt='web preview'>";
@@ -53,7 +52,7 @@ window.addEventListener('DOMContentLoaded', function () {
                 infoTag +="<p>|&nbsp;" + tech + "</p>";
                 infoTag +="</div>";
                 infoTag +="<div class='info_detail'>" + detail + "</div>";
-                infoTag +="<a href='work.html' class='return'><img src='img/ic_return.png' alt='return'></a>";
+                infoTag +="<a href='work.html' class='return' data-num='1'><img src='img/ic_return.png' alt='return'></a>";
                 infoTag +="</div>";
 
                 $('.con_info').append(infoTag);
@@ -61,26 +60,6 @@ window.addEventListener('DOMContentLoaded', function () {
                 $('.con_com').append(cTag);
                 $('.con_mob').append(mTag);
             } proList();
-            
-    /*=== next prev ===*/
-//            var btnPrev = document.querySelector('.prev');
-//            var btnNext = document.querySelector('.next');
-//            
-//            i=localStorage.num;
-//            
-//            btnPrev.addEventListener('click',function(e){
-//                e.preventDefault();
-////                location.href = e.target.getAttribute('href');
-//               /* localStorage.num =*/ i--;
-//            });
-//            
-//            btnNext.addEventListener('click',function(e){
-//                e.preventDefault();
-////                location.href = e.target.getAttribute('href');
-//                /*localStorage.num = */i++;
-//                
-//            });
-
 
         } // load end
     });
@@ -115,6 +94,9 @@ window.addEventListener('DOMContentLoaded', function () {
         
         var logo = document.querySelector('.logo');
         logo.addEventListener('click', funIndex);
+        
+        var back = document.querySelector('.return');
+        logo.addEventListener('click', funIndex);
 
         function funIndex(e){
             e.preventDefault();
@@ -136,47 +118,6 @@ window.addEventListener('DOMContentLoaded', function () {
         //        var page = localStorage.page;
         //        menu.children[page].classList.add('active');
     }
-    
-/*=== contents load ===*/
-    var title = document.querySelector('h1');
-    
-    setTimeout(showTit, 230);
-    
-    function showTit() {
-        title.style = "opacity:1;";
-    }
-    function TitHide() {
-        title.style = "opacity:0;";
-    }
-    
-    function funNav() {
-        var menu = document.querySelector('.navi');
-
-        menu.addEventListener('click', function (e) {
-            e.preventDefault();
-
-            var link = e.target.getAttribute('href');
-            var page = e.target.dataset.num;
-
-            if (page == 0 || page == 1) {
-                
-                setTimeout(TitHide, 50);
-                setTimeout(pageMv, 820);
-
-                function pageMv() {
-                    localStorage.page = page;
-                    location.href = link;
-                }
-            } else {
-                console.log('contact');
-            }
-        });
-        //        var page = localStorage.page;
-        //        menu.children[page].classList.add('active');
-    }
-    
-
-
 
 
 });

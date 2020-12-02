@@ -20,10 +20,6 @@ window.addEventListener('DOMContentLoaded', function () {
         conIntro.style = "bottom : 0%;";
     }
 
-    function headLoad() {
-        header.style = "opacity : 1;";
-    }
-
     function conHide() {
         conPhoto.style = "top : -100%;";
         conIntro.style = "bottom : -100%;";
@@ -89,9 +85,9 @@ window.addEventListener('DOMContentLoaded', function () {
                     }
                 }
             }
-        
-                var page = localStorage.page;
-                menu.children[page].classList.add('active');
+//        
+//                var page = localStorage.page;
+//                menu.children[page].classList.add('active');
         
     
     }

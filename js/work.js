@@ -42,18 +42,42 @@ window.addEventListener('DOMContentLoaded', function () {
                     listTag +="</a>";
                 });$('.hidden').append(listTag);
             } proList();
-            
-    /*=== work_detail ===*/
-        var work = document.querySelectorAll('.work');
-        work.forEach(function(el){
-            el.addEventListener('click',funMove);
-        });
-        function funMove(e){
-            e.preventDefault();
-            
-            localStorage.num = this.dataset.num;
-            location.href = this.href;
+        
+        var con = document.querySelector('.hidden');
+        var title = document.querySelector('h1');
+
+        function conHide() {
+            con.style = "transform : translateY(100vh)";
         }
+        function TitHide() {
+            title.style = "opacity:0;";
+            icScroll.style = "opacity:0;";
+        }
+        function bfMove(){
+            conHide();
+            setTimeout(TitHide, 50);
+        }
+            
+        var work = document.querySelectorAll('.work');
+            
+        work.forEach(function(el){
+            var link = el.href;
+            var page = el.dataset.num;
+            el.addEventListener('click',function(e){
+                
+            e.preventDefault();
+                
+            bfMove();
+            setTimeout(funMove, 820);
+                
+            function funMove(){
+                location.href = link;
+                localStorage.num = page;
+            }
+                
+            });
+        });
+            
 
     /*=== scroll event ===*/
             var winH = window.innerHeight;

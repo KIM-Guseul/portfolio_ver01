@@ -52,13 +52,11 @@ window.addEventListener('DOMContentLoaded', function () {
                 infoTag +="<p>|&nbsp;" + tech + "</p>";
                 infoTag +="</div>";
                 infoTag +="<div class='info_detail'>" + detail + "</div>";
-                infoTag +="<a href='work.html' class='return' data-num='1'><img src='img/ic_return.png' alt='return'></a>";
-                infoTag +="</div>";
 
-                $('.con_info').append(infoTag);
                 $('.contents h1').append(titTag);
                 $('.con_com').append(cTag);
                 $('.con_mob').append(mTag);
+                $('.con_info').prepend(infoTag);
             } proList();
 
         } // load end
@@ -87,15 +85,32 @@ window.addEventListener('DOMContentLoaded', function () {
         title.style = "opacity:0;";
     }
     
+    var back = document.querySelector('.con_info .return');
+    back.addEventListener('click', funBack);
+
+    function funBack(e){
+        e.preventDefault();
+
+        var link = this.href;
+        console.log(link)
+
+     if(link){
+            conHide();
+            setTimeout(TitHide, 100);
+            setTimeout(pageMv, 820);
+
+            function pageMv() {
+                location.href = link;
+            }
+        }
+    };
+    
 // === menu click ===//
     function funNav() {
         var menu = document.querySelector('.navi');
         menu.addEventListener('click', funIndex);
         
         var logo = document.querySelector('.logo');
-        logo.addEventListener('click', funIndex);
-        
-        var back = document.querySelector('.return');
         logo.addEventListener('click', funIndex);
 
         function funIndex(e){
@@ -115,8 +130,7 @@ window.addEventListener('DOMContentLoaded', function () {
                 }
             }
         };
-        //        var page = localStorage.page;
-        //        menu.children[page].classList.add('active');
+
     }
 
 

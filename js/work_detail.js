@@ -8,13 +8,14 @@ window.addEventListener('DOMContentLoaded', function () {
         data: {},
         success: function (data) {
             var tit, titTag='';
-            var link, date, work, tech, detail, infoTag = '';
+            var link, date, work, environ, tech, detail, develop, infoTag = '';
             var cImg, mImg, cTag, mTag = '';
             var total;
 
             function proList() {
                 
                 i=localStorage.num;
+                
 
                 tit = data.project[i].tit;
                 cImg = data.project[i].cImg;
@@ -22,13 +23,14 @@ window.addEventListener('DOMContentLoaded', function () {
                 link = data.project[i].link;
                 date = data.project[i].date;
                 work = data.project[i].work;
+                environ = data.project[i].environ;
                 tech = data.project[i].tech;
+                develop = data.project[i].develop;
                 detail = data.project[i].detail;
                 total = data.project.length;
                 
-            /*== title ==*/
-//                titTag ="<a href='work_detail.html' class='prev' data-num='"+i+"'></a>"+ tit +"<a href='work_detail.html' class='next' data-num='"+i+"'></a>";
                 
+            /*== title ==*/
                 titTag = tit;
                 
             /*=== preview ===*/
@@ -45,10 +47,15 @@ window.addEventListener('DOMContentLoaded', function () {
 
             /*== info ==*/
                 infoTag ="<div>";
-                infoTag +="<a href='"+ link +"' class='git' target='_blank'>Link</a>";
+                if(develop != ''){
+                    infoTag +="<a href='"+ link +"' class='git' target='_blank'>Site</a>";
+                }else{
+                    infoTag +="<a href='"+ link +"' class='git' target='_blank'>github</a>";
+                }
                 infoTag +="<div class='info_bref'>";
                 infoTag +="<p>|&nbsp;" + date + "</p>";
                 infoTag +="<p>|&nbsp;" + work + "</p>";
+                infoTag +="<p>|&nbsp;" + environ + "</p>";
                 infoTag +="<p>|&nbsp;" + tech + "</p>";
                 infoTag +="</div>";
                 infoTag +="<div class='info_detail'>" + detail + "</div>";

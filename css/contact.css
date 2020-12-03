@@ -18,7 +18,7 @@ main .con_cont{
 }
 main .cont_txt{
     height: 15vw;
-    position: relativere;
+    position: relative;
     transform: translateY(70%);
     display: flex;
     flex-direction: column;
@@ -33,14 +33,14 @@ main .cont_txt p{
     transition: .5s;
 }
 main .cont_txt p:nth-of-type(1){
-    transform: translateY(15vw);
+    transform: translateY(16vw);
 }
 main .cont_txt p:nth-of-type(2){
-    transform: translateY(15vw);
+    transform: translateY(16vw);
 }
 main .cont_txt p:nth-of-type(3){
     font-size: 5rem;
-    transform: translateY(15vw);
+    transform: translateY(16vw);
 }
 
 main .info_cont{
@@ -63,6 +63,48 @@ main .info_cont p{
 }
 main .info_cont p:nth-of-type(1){
     margin-left: 0;
+}
+
+/*==========================================================================*/
+@media (max-width:1024px){
+    h1{display: none;}
+    
+    main .hidden{
+        width: 100%; height: calc(100vh - 9.5vw);
+        transform: translateY(0);
+    }
+    main .con_cont{
+        position: relative;
+        top: 100%; left: 0;
+        width: 100%; height: 100%;
+    }
+
+    main .cont_txt p{
+        text-shadow: 0.2rem 0.2rem 0.4rem #000;
+    }
+    main .cont_txt p:nth-of-type(3){
+    display: none;
+}
+    main .info_cont{
+        width: 100%;height: 100%;
+        position: absolute;
+        bottom: 100%; left: 50%;
+        transform: translateX(-50%);
+        padding-left: 0;
+        background: none;
+        align-items: center;
+        justify-content: flex-end;
+        padding-bottom: 20vh;
+    }
+    main .info_cont p, main .info_cont p a{
+        color: #fffdfe;
+        font-size: 4rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width:768px){
+    
 }
 
 

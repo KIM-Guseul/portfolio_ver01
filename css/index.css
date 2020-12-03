@@ -48,8 +48,35 @@ main .introduce{
 }
 main .introduce h3{
     font-size: 9rem;
-    text-align: center;
+    text-align: left;
     line-height: 1.2;
+}
+
+/*==========================================================================*/
+
+@media (max-width:1024px){
+    main .contents{
+    overflow: auto;
+    }
+    main .back_photo, main .back_intro{
+        display: none;
+    }
+    main .main_photo{
+        top: 100%; left: 0;
+        width: 100%; height: calc(100vh - 9.5vw);
+    }
+    main .introduce{
+        bottom: 100%; right: 0;
+        width: 100%;height: 100%;
+        background: none;
+    }
+    main .introduce h3{
+        color: #fffdfe;
+    }
+}
+
+@media (max-width:768px){
+    
 }
 
 

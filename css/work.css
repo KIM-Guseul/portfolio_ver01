@@ -98,4 +98,41 @@ main .hidden > div{
     color:rgba(150,150,150,0.8);
 }
 
+/*==========================================================================*/
+@media (max-width:1024px){
+
+    h1{top: 3vw;}
+    main .hidden{
+        display: flex;
+        flex-direction: column;
+        align-items: center;            
+    }
+    main .hidden > div{
+        margin-bottom: 12vw;
+    }
+    .scroll{display: none;}
+    .work{
+        display: block;
+        height: 30vh;
+        box-shadow: none;
+        margin-bottom: 1rem;
+    }
+    .work:nth-of-type(2n-1){
+        float:none;
+    }
+    .work:nth-of-type(2n){
+        float:none;
+        top:0;
+    }
+    
+    .work figure b, .work .bref, .work .order,.work:nth-of-type(2n-1) .bref {
+        display: none;
+    }
+
+}
+
+@media (max-width:768px){
+    
+}
+
 

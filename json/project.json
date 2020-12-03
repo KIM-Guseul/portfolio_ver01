@@ -8,10 +8,11 @@
             "bref":"DEVELOPMENT",
             "environ":"WEB / MOBILE",
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
-            "detail":"KIM_GUSEUL KIM_GUSEUL KIM_GUSEUL KIM_GUSEULKIM_GUSEULKIM_GUSEUL",
+            "detail":"웹퍼블리셔/프론트엔드 개발자 김구슬의 포트폴리오 사이트",
             "link":"https://kim-guseul.github.io/portfolio_ver01/",
             "cImg":"img/c_portfolio.jpg",
-            "mImg":""
+            "mImg":"img/m_portfolio.jpg",
+            "develop":"o"
         },
         {
             "tit":"파랑새 극장",
@@ -21,62 +22,67 @@
             "environ":"WEB / MOBILE",
             "work":"기획 벤치마킹 구현",
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
-            "detail":"파랑새 극장 파랑새 극장 파랑새 극장 파랑새 극장 파랑새 극장",
+            "detail":"1984년 대학로 최초의 민간 소극장으로 문을 연 샘터 파랑새극장 사이트 리뉴얼",
             "link":"https://kim-guseul.github.io/theater/",
             "cImg":"img/c_theater.jpg",
-            "mImg":"img/m_theater.jpg"
+            "mImg":"img/m_theater.jpg",
+            "develop":"o"
         },
         {  
             "tit":"대한민국 막걸리 페스티벌",
             "thumb":"img/p_festival.jpg",
-            "date":"2020.08 - 2020.10",
+            "date":"2020.07 - 2020.08",
             "bref":"DEVELOPMENT",
             "environ":"WEB / MOBILE",
             "work":"기획 디자인 구현",
-            "tech":"HTML5 CSS3 JavaScript Jquery Json",
-            "detail":"대한민국 막걸리 페스티벌 대한민국 막걸리 페스티벌 대한민국 막걸리 페스티벌",
+            "tech":"HTML5 CSS3 JavaScript Jquery",
+            "detail":"대한민국 막걸리사이트 페스티벌 리뉴얼",
             "link":"https://kim-guseul.github.io/festival/",
             "cImg":"img/c_festival.jpg",
-            "mImg":"img/m_festival.jpg"
+            "mImg":"img/m_festival.jpg",
+            "develop":"o"
         },
         {  
             "tit":"KLAVU",
             "thumb":"img/p_cosmetic.jpg",
-            "date":"2020.08 - 2020.10",
-            "work":"기획 디자인 구현",
+            "date":"2020.06",
+            "work":"기획 디자인",
             "bref":"DESIGN",
             "environ":"WEB / MOBILE",
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
-            "detail":"KLAVU KLAVU KLAVU KLAVU KLAVU KLAVU",
+            "detail":"맑고 투명한 피부를 위해 진주가 품고 있는 영원한 헤리티지와 신비로운 바다의 생명 에너지로 피부 생명력을 강화해주는 프레스티지 마린 펄 코스메틱 브랜드코스 KLAVU 사이트 리뉴얼 디자인",
             "link":"https://kim-guseul.github.io/theater/",
             "cImg":"img/c_cosmetic.jpg",
-            "mImg":"img/m_cosmetic.jpg"
+            "mImg":"img/m_cosmetic.jpg",
+            "develop":""
         },
         {  
             "tit":"Mangez-Moi",
             "thumb":"img/p_Manger-Moi.png",
-            "date":"2020.08 - 2020.10",
-            "work":"기획 디자인 구현",
+            "date":"2020.06",
+            "work":"기획 디자인",
             "bref":"DESIGN",
             "environ":"MOBILE",
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
-            "detail":"Mangez-Moi Mangez-Moi Mangez-Moi Mangez-Moi",
+            "detail":"가상의 음식 배달 어플리케이션 Mangez-Moi 디자인",
             "link":"https://github.com/KIM-Guseul",
             "cImg":"",
-            "mImg":"img/m_mangezmoi.jpg"
+            "mImg":"img/m_mangezmoi.jpg",
+            "develop":""
         },
         {   
             "tit":"PLAY",
             "thumb":"img/p_play.jpg",
-            "date":"2020.08 - 2020.10",
-            "work":"기획 디자인 구현",
+            "date":"2020.06",
+            "work":"기획 디자인",
             "bref":"DESIGN",
             "environ":"WEB",
             "tech":"HTML5 CSS3 JavaScript Jquery Json",
-            "detail":"PLAY PLAY PLAY PLAY PLAY PLAY",
+            "detail":"가상의 연극/뮤지컬 매거진 PLAY 사이트 디자인",
             "link":"https://github.com/KIM-Guseul",
             "cImg":"img/c_play.jpg",
-            "mImg":""
+            "mImg":"",
+            "develop":""
         }
     ]
 }

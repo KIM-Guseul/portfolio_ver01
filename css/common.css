@@ -104,7 +104,7 @@ h1{
 /*==========================================================================*/
 
 @media (max-width:1024px){
-    html{height: 100vh; overflow: hidden;}
+    html{width: 100vw; height: 100vh; overflow: hidden;}
 
     header{
         left: 0; top:0;

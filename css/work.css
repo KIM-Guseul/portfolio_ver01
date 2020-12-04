@@ -108,6 +108,7 @@ main .hidden > div{
     main .hidden{
         width: 95%;
         margin: 0 auto;
+        overflow-x: hidden;
     }
     .scroll{display: none;}
     .work{

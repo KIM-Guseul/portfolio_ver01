@@ -65,6 +65,7 @@ main .info_cont p{
     
     main .con_cont{
         width: 100%; height: 100%;
+        overflow-x: hidden;
     }
     main .cont_txt{
         justify-content: flex-start;
@@ -87,7 +88,7 @@ main .info_cont p{
     main .info_cont p, main .info_cont p a{
         color: #fffdfe;
         font-size: 4rem;
-        line-height: 2;
+        line-height: 1.5;
     }
 }
 

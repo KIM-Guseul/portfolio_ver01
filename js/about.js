@@ -55,6 +55,12 @@ window.addEventListener('DOMContentLoaded', function (){
         //        var page = localStorage.page;
         //        menu.children[page].classList.add('active');
     }
+    
+///*=== btn_close event ===*/
+    var btnX = document.querySelector('.btn_close');
+    btnX.addEventListener('click',function(){
+        insta_st.classList.toggle("active");
+    });
 
 ///*=== scroll event ===*/
     var conFrame = document.querySelector('.con_info');

@@ -6,13 +6,11 @@ main .contents{
     height: 100vh;
 }
 h1{
-    top: calc((100vh - 36.5vw)/2 - 5vh);
-/*    opacity: 1;*/
+    top: 13vh;
 }
 .scroll{
     position: absolute;
-    top: calc((100vh - 36.5vw)/4); right: 50%;
-    transform: rotate(180deg);
+    top: 7vh; right: 50%;
     transform: translateX(-50%);
     height: 3rem;
     animation: scroll 1.5s linear infinite;
@@ -35,15 +33,17 @@ main .hidden{
     transform:translateY(-100vh);
     transition: .8s;
 }
+/*
 main .hidden > div{
-    margin-bottom: calc((100vh - 36.5vw)/2);
+    margin-bottom: 17.5vh;
 }
+*/
 
 /*============================================*/
 
 .work{
-    height: 14.5vw;
-    margin-bottom: calc(14.5vw - 5rem);
+    height: 28vh;
+    margin-bottom: 19vh;
     display: inline-block;
     position:relative;
     box-shadow: 0.6rem 0.6rem 0.8rem #999;
@@ -51,15 +51,16 @@ main .hidden > div{
 
 .work:nth-of-type(2n-1){
     float: left;
+    top: 17.5vh;
 }
 .work:nth-of-type(2n){
     float: right;
-    top:calc(14.5vw - 5rem); right: 1rem;
+    top:37.5vh; right: 1rem;
 }
 
 .work figure b{
     position: absolute;
-    top:-2.5rem; left: 4rem;
+    top:-2.3vh; left: 2.1vw;
     font-size: 3.5rem;
     color: rgba(20,20,20,0.7);
 }
@@ -71,10 +72,10 @@ main .hidden > div{
     display: flex;
     flex-direction: column;
     white-space: nowrap;
-    top: 40%; left: calc(100% + 2rem);
+    top: 30%; left: calc(100% + 1vw);
 }
 .work:nth-of-type(2n) .bref{
-    top: -3rem; right: 3rem;
+    top: -2.8vh; right: 1.6vw;
 }
 
 .work figure{
@@ -92,7 +93,7 @@ main .hidden > div{
     font-size: 1.5rem;
 }
 .work .order{
-    bottom: -2rem; left: 1rem;
+    bottom: -2.5vh; left: 0.5vw;
 }
 .work .order span:last-of-type{
     color:rgba(150,150,150,0.8);
@@ -100,35 +101,27 @@ main .hidden > div{
 
 /*==========================================================================*/
 @media (max-width:1024px){
-
-    h1{top: 3vw;}
-    main .hidden{
-        display: flex;
-        flex-direction: column;
-        align-items: center;            
+    h1{top: 2vh;}
+    main .contents{
+        height: 90vh;
     }
-    main .hidden > div{
-        margin-bottom: 12vw;
+    main .hidden{
+        width: 95%;
+        margin: 0 auto;
     }
     .scroll{display: none;}
     .work{
-        display: block;
-        height: 30vh;
-        box-shadow: none;
-        margin-bottom: 1rem;
+        margin-bottom: 5vh;
     }
     .work:nth-of-type(2n-1){
-        float:none;
+        top: 15vh;
     }
     .work:nth-of-type(2n){
-        float:none;
-        top:0;
+        top: 15vh;
     }
-    
-    .work figure b, .work .bref, .work .order,.work:nth-of-type(2n-1) .bref {
+    .work .bref, .work .order,.work:nth-of-type(2n-1) .bref {
         display: none;
     }
-
 }
 
 @media (max-width:768px){

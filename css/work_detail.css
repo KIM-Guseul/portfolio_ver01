@@ -115,6 +115,40 @@ main .con_info .return img{
 
 /*==========================================================================*/
 @media (max-width:1024px){
+    main .hidden {
+        display: inherit;
+    }
+    h1{
+        top: calc((100vh - 3vw)/2); right:50%;
+        transform: translateX(50%);
+    }
+    main .con_viewer{
+        width: 90%; height: calc((100vh - 10vw)/2);
+        margin: 0 auto;
+    }
+/*
+    main .con_viewer .m_com{
+        position: relative;
+        width: 75%; height: 100%;
+    }
+    main .con_viewer .m_mob{
+        width: 70%; height: 100%;
+    }
+*/
+   
+    main .con_info{
+        width: 100%; height: calc((100vh - 10vw)/2);
+    }
+/*
+    main .con_info .return img{
+        right: 2.5vw; top: 7vw;
+    }
+    main .con_info{
+        padding: 17vw 10vw 0 10vw;
+    }
+*/
+
+
 
 
 

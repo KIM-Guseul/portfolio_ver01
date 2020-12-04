@@ -68,16 +68,17 @@ window.addEventListener('DOMContentLoaded', function (){
     var page_02 = document.querySelector('.page_02');
     var top_02 = page_02.offsetTop;
     
-    $('.con_info').append("<section style='position:fixed;top:0;z-index:1; width:100%;height:100%; overflow:scroll;'><p style='width:100%;height:200%;'></p></section>");
+    $('.con_info').append("<section class='scr' style='position:fixed;top:0;z-index:1; width:100%;height:100%; overflow:scroll;'><p style='width:100%;height:200%;'></p></section>");
     
     var prePos = 0;
     var sout;
     
-    $(".con_info > section").on('scroll',function(e){
+    
+    $(".con_info .scr").on('scroll',function(e){
         e.preventDefault();
         e.stopPropagation();
- 
-        var initPos = $(this).scrollTop();
+        console.log('aaa')
+    var initPos = $(this).scrollTop();
             
         if(initPos > prePos){
             clearTimeout(sout)
